@@ -54,3 +54,50 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (11.1ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "user1"], ["created_at", "2015-09-21 15:12:37.404596"], ["updated_at", "2015-09-21 15:12:37.404596"]]
+  [1m[35m (25.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "user2"], ["created_at", "2015-09-21 15:12:37.450925"], ["updated_at", "2015-09-21 15:12:37.450925"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "user3"], ["created_at", "2015-09-21 15:12:37.464129"], ["updated_at", "2015-09-21 15:12:37.464129"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Tournament 1"], ["created_at", "2015-09-21 15:12:37.466088"], ["updated_at", "2015-09-21 15:12:37.466088"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tournament 2"], ["created_at", "2015-09-21 15:12:37.467835"], ["updated_at", "2015-09-21 15:12:37.467835"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Tournament 3"], ["created_at", "2015-09-21 15:12:37.469519"], ["updated_at", "2015-09-21 15:12:37.469519"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "user1"], ["created_at", "2015-09-21 15:13:44.568020"], ["updated_at", "2015-09-21 15:13:44.568020"]]
+  [1m[35m (9.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "user2"], ["created_at", "2015-09-21 15:13:44.583822"], ["updated_at", "2015-09-21 15:13:44.583822"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "user3"], ["created_at", "2015-09-21 15:13:44.586852"], ["updated_at", "2015-09-21 15:13:44.586852"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Tournament 1"], ["created_at", "2015-09-21 15:13:44.589167"], ["updated_at", "2015-09-21 15:13:44.589167"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tournament 2"], ["created_at", "2015-09-21 15:13:44.601776"], ["updated_at", "2015-09-21 15:13:44.601776"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Tournament 3"], ["created_at", "2015-09-21 15:13:44.603534"], ["updated_at", "2015-09-21 15:13:44.603534"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (9.0ms)[0m  [1mINSERT INTO "registrations" ("player_id", "tournament_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["player_id", 7], ["tournament_id", 10], ["created_at", "2015-09-21 15:13:44.613018"], ["updated_at", "2015-09-21 15:13:44.613018"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "registrations" ("player_id", "tournament_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["player_id", 8], ["tournament_id", 11], ["created_at", "2015-09-21 15:13:44.624794"], ["updated_at", "2015-09-21 15:13:44.624794"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "registrations" ("player_id", "tournament_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["player_id", 9], ["tournament_id", 12], ["created_at", "2015-09-21 15:13:44.627315"], ["updated_at", "2015-09-21 15:13:44.627315"]]
+  [1m[35m (0.4ms)[0m  COMMIT
