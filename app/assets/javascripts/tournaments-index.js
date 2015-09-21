@@ -19,9 +19,20 @@ function tournamentsIndex () {
     } else {
       html = buildTourneyListHtml(tournaments)
     }
-
     $tourneySection.append(html)
 
     $('[data-hook~=tourney-add]').removeClass('hidden')
   }
 }
+function deleteTournament (event){
+  event.preventDefault();
+  var id = parseInt(this.value)
+  event.target.parentElement.remove()
+  $.ajax({
+      url: "/api/tournaments/"+id,
+      type: 'DELETE'
+    });
+}
+
+
+
