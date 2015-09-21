@@ -5,6 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Player.destroy_all
+Tournament.destroy_all
+Registration.destroy_all
 
 players = Player.create([
 	{name: "user1"},
@@ -12,7 +15,7 @@ players = Player.create([
 	{name: "user3"},
 	])
 
-tournaments = Player.create([
+tournaments = Tournament.create([
 	{name: "Tournament 1"},
 	{name: "Tournament 2"},
 	{name: "Tournament 3"}
